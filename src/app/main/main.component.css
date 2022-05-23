@@ -1,6 +1,9 @@
 * {
     text-align: center;
 }
+h1, p {
+    font-family: 'Brush Script MT', cursive;
+  }
 ul {
     padding: 0;
     margin: 10px 0 0 0;
@@ -18,6 +21,7 @@ width: 300px;
 
 a {
     display: block;
+    font-family: 'Brush Script MT', cursive;
 }
 
   form {
