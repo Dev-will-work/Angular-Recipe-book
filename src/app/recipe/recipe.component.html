@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <form>
+            <button routerLink="/main">Go to main page</button>
+            <button routerLink="/cart">Go to shop cart</button>
+        </form>
+        <h1 itemprop="name" class="recipe__title">Хачапури с брынзой</h1>
+        <p style="text-align: justify;">Хачапури с брынзой вполне могут расширить ваши гастрономические горизонты, ведь, согласитесь, скучно довольствоваться лишь классическими рецептами. Тем более что результат получается очень даже достойным. Главное — найти хорошую брынзу, изготовленную из натурального молока: именно она определяет вкус хачапури. Кстати, если она соленая, то это легко исправить (в нашем рецепте вы найдете подсказку, каким образом справиться с подобной проблемой). А если вы немного «разбавите» брынзу адыгейским сыром: вкус начинки хачапури станет более нежным, деликатным.</p>
+        <img class="main-slider__image-image result-photo" itemprop="image" src="https://www.gastronom.ru/binfiles/images/20220516/b8c84457.jpg" alt="Хачапури с брынзой, заход" title="Хачапури с брынзой, заход">
+        <div class="recipe__ingredient-title">ИНГРЕДИЕНТЫ</div>
+        <app-ingredient-list [data]="['питьевая вода – 200 мл', 'сухие дрожжи – 3–4 г', 'соль – 1/2 ч. л.', 'сахар – 2 ч. л.', 'мука – 350 г + еще немного для раскатывания теста', 'растительное масло – 3 ст. л.', 'сливочное масло для смазывания хачапури – 80 г']">
+        </app-ingredient-list>
+        <!-- <ul>
+            <li class="recipe__ingredient" itemprop="recipeIngredient"><span>питьевая вода – 200 мл</span><button (click)="addRecipe($event)">Add to cart</button></li>
+            <li class="recipe__ingredient" itemprop="recipeIngredient"><span>сухие дрожжи – 3–4 г</span><button (click)="addRecipe($event)">Add to cart</button></li>
+            <li class="recipe__ingredient" itemprop="recipeIngredient"><span>соль – 1/2 ч. л.</span><button (click)="addRecipe($event)">Add to cart</button></li>
+            <li class="recipe__ingredient" itemprop="recipeIngredient"><span>сахар – 2 ч. л.</span><button (click)="addRecipe($event)">Add to cart</button></li>
+            <li class="recipe__ingredient" itemprop="recipeIngredient"><span>мука – 350 г + еще немного для раскатывания теста</span><button (click)="addRecipe($event)">Add to cart</button></li>
+            <li class="recipe__ingredient" itemprop="recipeIngredient"><span>растительное масло – 3 ст. л.</span><button (click)="addRecipe($event)">Add to cart</button></li>
+            <li class="recipe__ingredient" itemprop="recipeIngredient"><span>сливочное масло для смазывания хачапури – 80 г</span><button (click)="addRecipe($event)">Add to cart</button></li>
+        </ul> -->
+        <div class="recipe__ingredient-title">Для начинки:</div>
+        <app-ingredient-list [data]="['петрушка – 1 веточка', 'укроп  – 1 веточка', 'брынза – 400 г', 'яйцо С1 – 1 шт.', 'свежемолотый черный перец – по вкусу']">
+        </app-ingredient-list>
+        <!-- <ul>                                
+            <li class="recipe__ingredient" itemprop="recipeIngredient"><span>петрушка – 1 веточка</span><button (click)="addRecipe($event)">Add to cart</button></li>
+            <li class="recipe__ingredient" itemprop="recipeIngredient"><span>укроп  – 1 веточка</span><button (click)="addRecipe($event)">Add to cart</button></li>
+            <li class="recipe__ingredient" itemprop="recipeIngredient"><span>брынза – 400 г</span><button (click)="addRecipe($event)">Add to cart</button></li>
+            <li class="recipe__ingredient" itemprop="recipeIngredient"><span>яйцо С1 – 1 шт.</span><button (click)="addRecipe($event)">Add to cart</button></li>
+            <li class="recipe__ingredient" itemprop="recipeIngredient"><span>свежемолотый черный перец – по вкусу</span><button (click)="addRecipe($event)">Add to cart</button></li>
+        </ul> -->
+        <div itemprop="recipeInstructions">
+            <div class="nativerolltv" style="max-width: 100%;overflow: hidden; margin: 25px 0;"></div>
+                <h2 class="recipe__ingredient-title">ПОШАГОВЫЙ РЕЦЕПТ ПРИГОТОВЛЕНИЯ</h2>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 1</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220516/bd92e0dd.jpg" alt="Хачапури с брынзой, подготовка дрожжей" title="Хачапури с брынзой, подготовка дрожжей"></div>
+                    <div class="recipe__step-text">
+                        Приготовьте тесто для хачапури. Воду подогрейте до 36°C. Перелейте в миску и добавьте сухие дрожжи. Перемешайте и накройте чистым полотенцем. Оставьте на 15 минут, чтобы дрожжи активировались.
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 2</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220516/ba0924b0.jpg" alt="Хачапури с брынзой, уберание теста в теплое место" title="Хачапури с брынзой, уберание теста в теплое место"></div>
+                    <div class="recipe__step-text">
+                        Добавьте соль и сахар, перемешайте. Всыпьте муку и тщательно вымесите. Влейте растительное масло. Вымешивайте тесто хачапури в течение 10 минут. Оно должно стать мягким, но не прилипать к рукам.
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 3</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220516/baaeadbd.jpg" alt="Хачапури с брынзой, вымешивание теста" title="Хачапури с брынзой, вымешивание теста"></div>
+                    <div class="recipe__step-text">
+                        Сформуйте из теста шар. Затяните верх миски пленкой и сделайте в ней несколько проколов ножом. Оставьте в теплом месте на 1,5 часа. Тесто должно увеличиться в объеме в полтора раза.
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 4</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220516/bb450e51.jpg" alt="Хачапури с брынзой, нарезка зелени" title="Хачапури с брынзой, нарезка зелени"></div>
+                    <div class="recipe__step-text">
+                        Приготовьте начинку из брынзы для хачапури. Петрушку и укроп вымойте, тщательно обсушите бумажным полотенцем. Грубые стебли удалите. Листочки мелко нарежьте.
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 5</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220516/b59093ee.jpg" alt="Хачапури с брынзой, готовка начинки" title="Хачапури с брынзой, готовка начинки"></div>
+                    <div class="recipe__step-text">
+                        Попробуйте брынзу. Если она очень соленая, поместите сыр в миску с молоком и уберите в холодильник на 2 часа, после чего разомните вилкой. Если брынза приятная на вкус, просто раскрошите ее в миску. Добавьте яйцо и перемешайте. Поперчите по вкусу. Добавьте зелень и снова перемешайте. 
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 6</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220516/b110af35.jpg" alt="Хачапури с брынзой, формирование хачапури" title="Хачапури с брынзой, формирование хачапури"></div>
+                    <div class="recipe__step-text">
+                        Тесто выложите на рабочий стол, подпыленный мукой, и разделите на 5–6 частей. Каждую раскатайте в тонкую лепешку. На середину каждой выложите начинку из брынзы и соберите над ней края теста. Защипните.
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 7</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220516/bf2ecb65.jpg" alt="Хачапури с брынзой, выпекание хачапури" title="Хачапури с брынзой, выпекание хачапури"></div>
+                    <div class="recipe__step-text">
+                        Переверните получившиеся изделия и раскатайте в толстые лепешки. Выложите на противень, выстланный бумагой для выпечки. Смажьте небольшим количеством растопленного сливочного масла. Выпекайте около 25 минут при 180°C. Готовые хачапури смажьте оставшимся сливочным маслом.
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>

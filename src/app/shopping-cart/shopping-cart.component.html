@@ -1,0 +1,12 @@
+<form>
+    <button routerLink="/main">Go to main page</button>
+</form>
+<h1>Shopping cart</h1>
+
+<div><input type="text" placeholder="Enter your ingredient" [formControl]="recipeInput" (keydown.enter)="addRecipe()"></div>
+
+<ul>
+    <li *ngFor="let recipe of recipes">
+      <app-ingredient [recipe]="recipe" (delete)="onDelete(recipe)"></app-ingredient>
+    </li>
+</ul>

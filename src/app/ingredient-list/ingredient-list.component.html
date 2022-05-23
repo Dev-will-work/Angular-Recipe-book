@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let ingredient of data" class="recipe__ingredient" itemprop="recipeIngredient">
+        <span>{{ingredient}}</span><button (click)="addRecipe($event)">Add to cart</button>
+    </li>
+</ul>

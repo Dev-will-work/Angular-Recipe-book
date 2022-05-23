@@ -1,0 +1,74 @@
+
+html {
+    font-size: 16px;
+    font-family: "PT Sans";
+}
+
+div {
+    margin: auto;
+    width: auto;
+}
+
+* {
+    text-align: center;
+  }
+  
+  .recipe__ingredient-title {
+    font-family: 'PT Sans Narrow',sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: #1d211f;
+    text-align: center;
+    font-weight: 700;
+}
+
+.recipe__ingredient {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1d211f;
+    text-align: center;
+    border-bottom: 1px solid #e7e9e7;
+    padding: 3px 0 5px;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+}
+
+.recipe__step-title {
+    font-family: "PT Sans Narrow";
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #1d211f;
+    text-align: left;
+    margin: auto;
+}
+
+.recipe__step-text {
+    box-sizing: border-box;
+    display: block;
+    font-family: "PT Sans";
+    font-size: 16px;
+    line-height: 24px;
+    color: #1d211f;
+    text-align: left;
+    margin-top: -5px;
+    text-size-adjust: 100%;
+}
+
+button {
+    /* remove default behavior */
+    appearance:none;
+    -webkit-appearance:none;
+    /* usual styles */
+    padding:10px;
+    border:none;
+    background-color:#4F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    margin: 10px;
+  }
