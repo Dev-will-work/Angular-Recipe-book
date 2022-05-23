@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <form>
+            <button routerLink="/main">Go to main page</button>
+            <button routerLink="/cart">Go to shop cart</button>
+        </form>
+        <h1 itemprop="name" class="recipe__title">Быстрый пирог со шпинатом и яйцом</h1>
+        <p style="text-align: justify;">Ели вы любите осетинские пироги, это рецепт для вас. Ленивый вариант (из готового теста) без сложностей раскатывания и формовки, с очень простой начинкой буквально из «подножного корма». При этом получается замечательно! Такой пирог хорош и горячим, и холодным, отлично режется, прекрасно хранится – а в случае чего его можно и заморозить.</p>
+        <img class="main-slider__image-image result-photo" itemprop="image" src="https://www.gastronom.ru/binfiles/images/20220428/b5f2ab6f.jpg" alt="Хачапури с брынзой, заход" title="Хачапури с брынзой, заход">
+        <div class="recipe__ingredient-title">ИНГРЕДИЕНТЫ</div>
+        <app-ingredient-list [data]="['500 г слоеного теста', '400 г шпината', '4 крупных яйца С0', ' 50 г сливочного масла', 'соль', 'свежемолотый черный перец', '1 желток для смазывания']">
+        </app-ingredient-list>
+
+        <div itemprop="recipeInstructions">
+            <div class="nativerolltv" style="max-width: 100%;overflow: hidden; margin: 25px 0;"></div>
+                <h2 class="recipe__ingredient-title">ПОШАГОВЫЙ РЕЦЕПТ ПРИГОТОВЛЕНИЯ</h2>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 1</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220428/b99bfbda.jpg" alt="Хачапури с брынзой, подготовка дрожжей" title="Хачапури с брынзой, подготовка дрожжей"></div>
+                    <div class="recipe__step-text">
+                        Сварите яйца «в мешочек», 5 мин. после закипания. Переложите в ледяную воду, затем очистите.
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 2</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220428/bfad0e1d.jpg" alt="Хачапури с брынзой, уберание теста в теплое место" title="Хачапури с брынзой, уберание теста в теплое место"></div>
+                    <div class="recipe__step-text">
+                        Разогрейте духовку до 200°С. Разделите тесто на 2 слегка неравные части. Большую часть растяните руками или раскатайте так чтобы она была только чуть-чуть больше вашей формы для запекания. Застелите форму тестом.
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 3</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220428/bd6a5673.jpg" alt="Хачапури с брынзой, вымешивание теста" title="Хачапури с брынзой, вымешивание теста"></div>
+                    <div class="recipe__step-text">
+                        Порубите шпинат. Растопите масло в сотейнике с крышкой на среднем огне, положите рубленые листья, перемешайте и закройте крышкой. Через 2 мин. снимите с огня.
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 4</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220428/bae2583c.jpg" alt="Хачапури с брынзой, нарезка зелени" title="Хачапури с брынзой, нарезка зелени"></div>
+                    <div class="recipe__step-text">
+                        Выложите яйца на листья и разомните вилкой. Посолите и поперчите. Перемешайте и выложите смесь листьев и яиц на тесто.
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 5</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220428/bd89a049.jpg" alt="Хачапури с брынзой, готовка начинки" title="Хачапури с брынзой, готовка начинки"></div>
+                    <div class="recipe__step-text">
+                        Раскатайте оставшееся тесто, закройте начинку, скрепите края и защипните. В центре проделайте круглое отверстие для выхода пара. Смажьте пирог желтком, смешанным с 1 ч. л. воды.
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 6</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220428/bf44e6b4.jpg" alt="Хачапури с брынзой, формирование хачапури" title="Хачапури с брынзой, формирование хачапури"></div>
+                    <div class="recipe__step-text">
+                        Выпекайте пирог, поставив в центр разогретой духовки, 25 мин. Подавайте горячим, теплым или полностью остывшим.
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>

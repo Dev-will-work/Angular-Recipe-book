@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <form>
+            <button routerLink="/main">Go to main page</button>
+            <button routerLink="/cart">Go to shop cart</button>
+        </form>
+        <h1 itemprop="name" class="recipe__title">Кекс на подсолнечном масле</h1>
+        <p style="text-align: justify;">Кекс на подсолнечном масле отлично подойдет всем постящимся, а также вегетарианцам, если последних не смущает присутствие в составе меда (некоторые считают его продуктом животного происхождения). И никаких компромиссов по гастрономической части: выпечка получается очень вкусной! Для приготовления кекса мы рекомендуем использовать рафинированное подсолнечное масло, не имеющее характерного запаха: все-таки для сладкой выпечки подобный аромат не очень подходит. А вот с оливковым первого холодного отжима при случае можно поэкспериментировать! Знатоки утверждают, что оно делает вкус выпечки более выразительным, а текстуру — приятно влажноватой.</p>
+        <img class="main-slider__image-image result-photo" itemprop="image" src="https://www.gastronom.ru/binfiles/images/20220516/b479e16f.jpg" alt="Хачапури с брынзой, заход" title="Хачапури с брынзой, заход">
+        <div class="recipe__ingredient-title">ИНГРЕДИЕНТЫ</div>
+        <app-ingredient-list [data]="['сахар – 180 г', 'питьевая вода – 230 мл', 'рафинированное подсолнечное масло – 100 мл', 'мед – 70 г', 'мука – 250 г', 'разрыхлитель – 7 г', 'какао-порошок – 2 ст. л.', 'очищенные грецкие орехи – 70 г']">
+        </app-ingredient-list>
+        <div itemprop="recipeInstructions">
+            <div class="nativerolltv" style="max-width: 100%;overflow: hidden; margin: 25px 0;"></div>
+                <h2 class="recipe__ingredient-title">ПОШАГОВЫЙ РЕЦЕПТ ПРИГОТОВЛЕНИЯ</h2>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 1</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220516/b7272721.jpg" alt="Хачапури с брынзой, подготовка дрожжей" title="Хачапури с брынзой, подготовка дрожжей"></div>
+                    <div class="recipe__step-text">
+                        Приготовьте тесто для кекса на подсолнечном масле. В небольшую кастрюлю насыпьте сахар. Залейте его питьевой водой и перемешайте. Положите мед и поставьте кастрюлю на средний огонь.
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 2</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220516/bc46343f.jpg" alt="Хачапури с брынзой, уберание теста в теплое место" title="Хачапури с брынзой, уберание теста в теплое место"></div>
+                    <div class="recipe__step-text">
+                        Постоянно помешивая, нагревайте смесь до тех пор, пока мед и сахар не разойдутся. Снимите с огня. Дайте остыть получившемуся медовому сиропу примерно до 30°C.
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 3</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220516/b8b4991b.jpg" alt="Хачапури с брынзой, вымешивание теста" title="Хачапури с брынзой, вымешивание теста"></div>
+                    <div class="recipe__step-text">
+                        Муку для теста кекса просейте вместе с разрыхлителем и какао-порошком через мелкое сито в большую миску. Влейте теплый медовый сироп и подсолнечное масло. Тщательно перемешайте, чтобы получилось тесто однородной консистенции.
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 4</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220516/bc879805.jpg" alt="Хачапури с брынзой, нарезка зелени" title="Хачапури с брынзой, нарезка зелени"></div>
+                    <div class="recipe__step-text">
+                        Очищенные грецкие орехи крупно порубите ножом. Добавьте в тесто и перемешайте лопаткой. Прямоугольную форму для кекса выстелите хорошей бумагой для выпечки.
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 5</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220516/bc90f777.jpg" alt="Хачапури с брынзой, готовка начинки" title="Хачапури с брынзой, готовка начинки"></div>
+                    <div class="recipe__step-text">
+                        Переложите тесто кекса в подготовленную форму. Выпекайте около 40 минут при 180°C. Дайте кексу немного остыть в форме, затем аккуратно выложите на решетку.
+                    </div>
+                </div>
+                <div class="recipe__step">
+                    <div class="recipe__step-title">Шаг 6</div>
+                    <div class="-tac"><img class="recipe__step-img" src="https://www.gastronom.ru/binfiles/images/20220516/b5108658.jpg" alt="Хачапури с брынзой, формирование хачапури" title="Хачапури с брынзой, формирование хачапури"></div>
+                    <div class="recipe__step-text">
+                        Готовый кекс подайте на стол к чаю или кофе теплым или полностью остывшим. Верх изделия можно покрыть шоколадной глазурью и украсить половинками грецких орехов.
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>

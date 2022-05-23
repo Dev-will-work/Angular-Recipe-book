@@ -11,6 +11,8 @@ import { RecipeService } from './recipe.service';
 import { IngredientComponent } from './ingredient/ingredient.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { IngredientListComponent } from './ingredient-list/ingredient-list.component';
+import { Recipe2Component } from './recipe2/recipe2.component';
+import { Recipe3Component } from './recipe3/recipe3.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { IngredientListComponent } from './ingredient-list/ingredient-list.compo
     MainComponent,
     ShoppingCartComponent,
     IngredientComponent,
-    IngredientListComponent
+    IngredientListComponent,
+    Recipe2Component,
+    Recipe3Component
   ],
   imports: [
     BrowserModule,
